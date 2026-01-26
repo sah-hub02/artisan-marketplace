@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-padding {
+  padding: 100px 0 !important;
+}
+
+.section-padding-filter {
+  padding: 100px 0 0 0 !important;
+}
+
+.section-padding-bootom {
+  padding: 50px 0 50px 0 !important;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 15px;
+}
+
+body {
+  padding-top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #0F766E;
+  padding: 30px 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin-right: 20px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-link.active {
+  border-bottom: 4px solid #ffffff;
+}
+
+.artists-header {
+  background-color: #f4f1ec;
+  padding: 80px 0;
+}
+
+.artists-header h1 {
+  font-weight: 700;
+}
+
+.artist-card {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.185);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.artist-category {
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.artist-card img {
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.card-titlee {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+
+.Gallery-tittle {
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+
+.footer-theme {
+  background-color: #0F766E;
+  color: white;
+  padding: 15px 0;
+}
+
+.footer-logo {
+  width: 220px;
+  max-width: 100%;
+}
+
+.footer-text {
+  color: #e0e0e0;
+  max-width: 320px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.footer-links li {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #00ffea;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.664);
+}
+
+.footer-copy a {
+  font-size: 0.9rem;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-copy strong {
+  font-size: 15px;
+}
+
+.footer-contact p {
+  font-size: 20px;
+  margin-top: 20px;
+}

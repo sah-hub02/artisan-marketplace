@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Artists | Local Artisan Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/artists.css">
+</head>
+
+<body>
+
+  <!--  NAVBAR  -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Artisan Market</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="artists.html">Artists</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="developer.html">Developer</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--  HEADER  -->
+    <section class="artists-header">
+      <div class="container text-center">
+        <h1>Meet Our Artists</h1>
+        <p>Discover talented local artisans and their handmade creations</p>
+      </div>
+    </section>
+
+    <!--  FILTER BUTTONS  -->
+    <section class="artist-filters py-4 section-padding-filter">
+      <div class="container text-center">
+        <button class="btn btn-outline-dark m-1 filter-btn" data-filter="all">All</button>
+        <button class="btn btn-outline-dark m-1 filter-btn" data-filter="pottery">Pottery</button>
+        <button class="btn btn-outline-dark m-1 filter-btn" data-filter="textile">Textile</button>
+        <button class="btn btn-outline-dark m-1 filter-btn" data-filter="wood">Wood Craft</button>
+        <button class="btn btn-outline-dark m-1 filter-btn" data-filter="jewelry">Jewelry</button>
+      </div>
+    </section>
+
+    <!--  ARTISTS GRID  -->
+    <section class="artists-section py-5 section-padding-bootom ">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6 artist-item pottery">
+            <div class="card artist-card">
+              <img src="./img/pottery.jpg" class="card-img-top" alt="Pottery Artist">
+              <div class="card-body">
+                <span class="card-title">Anita Sharma</span>
+                <p class="artist-category">Pottery Artist</p>
+                <p class="card-text">
+                  Expert in traditional clay pottery with over 10 years of
+                  experience.
+                </p>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#artist1">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item textile">
+            <div class="card artist-card">
+              <img src="./img/Textile.jfif" class="card-img-top" alt="Textile Artist">
+              <div class="card-body">
+                <span class="card-title">Ramesh Verma</span>
+                <p class="artist-category">Textile Designer</p>
+                <p class="card-text">
+                  Handwoven fabrics inspired by Indian heritage and culture.
+                </p>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#artist2">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item wood">
+            <div class="card artist-card">
+              <img src="./img/WoodCraft.jfif" class="card-img-top" alt="WoodCraft Artist">
+              <div class="card-body">
+                <span class="card-title">Suresh Patel</span>
+                <p class="artist-category">Wood Craft Artist</p>
+                <p class="card-text">
+                  Specializes in handmade wooden sculptures and decor items.
+                </p>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#artist3">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item jewelry">
+            <div class="card artist-card">
+              <img src="./img/Jewelry.jpg" class="card-img-top" alt="Jewelry Artist">
+              <div class="card-body">
+                <span class="card-title">Meera Joshi</span>
+                <p class="artist-category">Jewelry Designer</p>
+                <p class="card-text">
+                  Handmade silver and stone jewelry with modern designs.
+                </p>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#artist4">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="artists-section py-5 section-padding">
+      <div class="container">
+        <h2 class="Gallery-tittle">Artists Gallery</h2>
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6 artist-item pottery">
+            <div class="card artist-card">
+              <img src="./img/pottery.jpg" class="card-img-top" alt="Pottery Artist">
+              <div class="card-body">
+                <span class="card-titlee">Pottery Artist</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item textile">
+            <div class="card artist-card">
+              <img src="./img/Textile.jfif" class="card-img-top" alt="Textile Artist">
+              <div class="card-body">
+                <span class="card-titlee">Textile Designer</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item wood">
+            <div class="card artist-card">
+              <img src="./img/WoodCraft.jfif" class="card-img-top" alt="WoodCraft Artist">
+              <div class="card-body">
+                <span class="card-titlee">Wood Craft Artist</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item jewelry">
+            <div class="card artist-card">
+              <img src="./img/Jewelry.jpg" class="card-img-top" alt="Jewelry Artist">
+              <div class="card-body">
+                <span class="card-titlee">Jewelry Designer</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item jewelry">
+            <div class="card artist-card">
+              <img src="./img/Handwoven.jpg" class="card-img-top" alt="Jewelry Artist">
+              <div class="card-body">
+                <span class="card-titlee">Handwoven Designer</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 artist-item jewelry">
+            <div class="card artist-card">
+              <img src="./img/DIy-1.webp" class="card-img-top" alt="Jewelry Artist">
+              <div class="card-body">
+                <span class="card-titlee">textile Designer</span>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer footer-theme text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+
+        <div class="col-lg-4 col-md-6 text-center text-md-start">
+          <figure><img src="./img/logo.png" alt="Rohit Logo" class="footer-logo mb-3 "></figure>
+          <p class="footer-text">
+            Local Artisan Marketplace promotes handmade crafts,
+            empowering local artists and preserving traditional skills.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center text-md-start">
+          <span class="footer-title mb-3">Quick Links</span>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="developer.html">Developer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 text-center text-md-start footer-contact">
+          <span class="footer-title mb-3">Contact</span>
+          <p><i class="bi bi-geo-alt me-2"></i>India</p>
+          <p><i class="bi bi-envelope me-2"></i>artisan@marketplace.com</p>
+          <p><i class="bi bi-phone me-2"></i>+91 90000 00000</p>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider my-4">
+
+      <div class="text-center">
+        <p class="mb-0 footer-copy">
+          <a href="#"> © 2026 Local Artisan Marketplace </a>|
+          Designed & Developed by
+          <strong>Rohit Kumar Sah</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./js/artists.js"></script>
+
+</body>
+
+</html>
