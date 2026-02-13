@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Artisan Market</a>
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -27,12 +27,11 @@
 
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
                         <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
-                        <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="developer.html">Developer</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +49,38 @@
         <section class="py-5 section-padding">
             <div class="container">
                 <div class="row g-4 ">
+                    <!-- Product Modal -->
+                    <div class="modal fade" id="productModal-1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
 
+                                <div class="modal-header">
+                                    <span class="modal-title">Clay Vase</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <img src="./img/product-img/Clay-Vase.webp" class="img-fluid mb-3">
+
+                                    <p><strong>Category:</strong> Pottery Art</p>
+                                    <p><strong>Price:</strong> ₹1200</p>
+
+                                    <p>
+                                        Handmade clay vase crafted by skilled artisans.
+                                        Perfect for home decoration and gifting.
+                                    </p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card h-100 shadow-sm ">
                             <img src="./img/product-img/Clay-Vase.webp" class="card-img-top img-fluid" alt="Clay Vase">
@@ -58,11 +88,46 @@
                                 <span>Clay Vase</span>
                                 <p class="text-muted small">Pottery Art</p>
                                 <p class="fw-bold">₹1200</p>
-                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-1">
+                                    View
+                                </button>
                             </div>
                         </div>
                     </div>
 
+
+                    <div class="modal fade" id="productModal-2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <span class="modal-title">Clay Vase</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <img src="./img/product-img/Handwoven-Bag.webp" class="img-fluid mb-3">
+
+                                    <p><strong>Category:</strong> Handloom Art</p>
+                                    <p><strong>Price:</strong> ₹950</p>
+
+                                    <p>
+                                        Handmade clay vase crafted by skilled artisans.
+                                        Perfect for home decoration and gifting.
+                                    </p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card h-100 shadow-sm">
                             <img src="./img/product-img/Handwoven-Bag.webp" class="card-img-top img-fluid" alt="Bag">
@@ -70,11 +135,46 @@
                                 <span>Handwoven Bag</span>
                                 <p class="text-muted small">Handloom</p>
                                 <p class="fw-bold">₹950</p>
-                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-2">
+                                    View
+                                </button>
                             </div>
                         </div>
                     </div>
 
+
+                    <div class="modal fade" id="productModal-3" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <span class="modal-title">Clay Vase</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <img src="./img/product-img/Wood-Sculpture.jpg" class="img-fluid mb-3">
+
+                                    <p><strong>Category:</strong> Woodcraft Art</p>
+                                    <p><strong>Price:</strong> ₹2100</p>
+
+                                    <p>
+                                        Handmade clay vase crafted by skilled artisans.
+                                        Perfect for home decoration and gifting.
+                                    </p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card h-100 shadow-sm">
                             <img src="./img/product-img/Wood-Sculpture.jpg" class="card-img-top img-fluid"
@@ -83,11 +183,46 @@
                                 <span>Wood Sculpture</span>
                                 <p class="text-muted small">Woodcraft</p>
                                 <p class="fw-bold">₹2100</p>
-                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-3">
+                                    View
+                                </button>
                             </div>
                         </div>
                     </div>
 
+
+                    <div class="modal fade" id="productModal-4" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <span class="modal-title">Clay Vase</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <img src="./img/product-img/Handmade-Jewelry.jpg" class="img-fluid mb-3">
+
+                                    <p><strong>Category:</strong> Jewelry Art</p>
+                                    <p><strong>Price:</strong> ₹750</p>
+
+                                    <p>
+                                        Handmade clay vase crafted by skilled artisans.
+                                        Perfect for home decoration and gifting.
+                                    </p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card h-100 shadow-sm">
                             <img src="./img/product-img/Handmade-Jewelry.jpg" class="card-img-top img-fluid"
@@ -96,10 +231,182 @@
                                 <span>Handmade Jewelry</span>
                                 <p class="text-muted small">Jewelry</p>
                                 <p class="fw-bold">₹750</p>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-4">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/Jewelry.jpg" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Handmade Jewelry</span>
+                                <p class="text-muted small">Jewelry</p>
+                                <p class="fw-bold">₹550</p>
                                 <button class="btn btn-secondary btn-sm mt-auto">View</button>
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/hand-3.jpg" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Handwoven Bag</span>
+                                <p class="text-muted small">Handloom </p>
+                                <p class="fw-bold">₹3150</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/pottery.jpg" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Clay Vase</span>
+                                <p class="text-muted small">Pottery Art </p>
+                                <p class="fw-bold">₹1550</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/wood.jpg" class="card-img-top img-fluid" alt="Wood Art">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Wood Sculpture</span>
+                                <p class="text-muted small">Woodcraft</p>
+                                <p class="fw-bold">₹3100</p>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-3">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/handwoven-11.jfif" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Handwoven Bag</span>
+                                <p class="text-muted small">Handloom </p>
+                                <p class="fw-bold">₹999</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/Clay-11.webp" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Clay Vase</span>
+                                <p class="text-muted small">Pottery Art </p>
+                                <p class="fw-bold">₹1550</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/wood-12.jfif" class="card-img-top img-fluid" alt="Wood Art">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Wood Sculpture</span>
+                                <p class="text-muted small">Woodcraft</p>
+                                <p class="fw-bold">₹2100</p>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-3">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/handbag-12.webp" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Handloom Bag</span>
+                                <p class="text-muted small">Handloom</p>
+                                <p class="fw-bold">₹5150</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/images-11.jfif" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Handwoven Bag</span>
+                                <p class="text-muted small">Handloom </p>
+                                <p class="fw-bold">₹750</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/Clay-12.jfif" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Clay Vase</span>
+                                <p class="text-muted small">Pottery Art </p>
+                                <p class="fw-bold">₹1550</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/wood-11.jpg" class="card-img-top img-fluid" alt="Wood Art">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Wood Sculpture</span>
+                                <p class="text-muted small">Woodcraft</p>
+                                <p class="fw-bold">₹3000</p>
+                                <button class="btn btn-secondary btn-sm mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#productModal-3">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./img/Handwoven.jpg" class="card-img-top img-fluid" alt="Jewelry">
+                            <div class="card-body text-center d-flex flex-column">
+                                <span>Handloom Bag</span>
+                                <p class="text-muted small">Handloom</p>
+                                <p class="fw-bold">₹5150</p>
+                                <button class="btn btn-secondary btn-sm mt-auto">View</button>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
@@ -176,7 +483,7 @@
 
         <section class="py-5 text-center section-padding">
             <div class="container">
-                <h3>Support Local Artisans</h3>
+                <h2>Support Local Artisans</h2>
                 <p class="text-muted">
                     Every purchase helps preserve traditional craftsmanship.
                 </p>
@@ -195,13 +502,14 @@
     <footer class="footer footer-theme text-light pt-5 pb-4">
         <div class="container">
             <div class="row gy-4 align-items-start">
-
                 <div class="col-lg-4 col-md-6 text-center text-md-start">
-                    <figure><img src="./img/logo.png" alt="Rohit Logo" class="footer-logo mb-3 "></figure>
+                    <a class="footer-logo" href="#"><img src="./img/logo.png" alt="logo"></a>
+
                     <p class="footer-text">
                         Local Artisan Marketplace promotes handmade crafts,
                         empowering local artists and preserving traditional skills.
                     </p>
+
                 </div>
 
                 <div class="col-lg-4 col-md-6 text-center text-md-start">
@@ -212,7 +520,6 @@
                         <li><a href="products.html">Products</a></li>
                         <li><a href="events.html">Events</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="developer.html">Developer</a></li>
                     </ul>
                 </div>
 
